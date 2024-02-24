@@ -24,14 +24,14 @@ function TaskForm() {
           Agregar tareas
         </h1>
         <input
-          placeholder="Excribe tu tarea"
+          placeholder="Escribe tu tarea"
           onChange={(e) => setTitle(e.target.value)}
           value={title}
           autoFocus
           className="bg-slate-300 p-3 w-full mb-2"
         />
         <textarea
-          placeholder="Escribe una descripcion"
+          placeholder="Escribe una descripción"
           onChange={(e) => setDescription(e.target.value)}
           value={description}
           className="bg-slate-300 p-3 w-full mb-2"
