@@ -1,17 +1,7 @@
-import { useState } from "react";
-import { tasks as data } from "./tasks";
-import { useEffect } from "react";
-
-function TaskList() {
-  const [tasks, setTasks] = useState([]);
-
-  if (data.length === 0) {
+function TaskList({ tasks }) {
+  if (tasks.length === 0) {
     return <h1>No hay tareas</h1>;
   }
-
-  useEffect(() => {
-    setTasks(data);
-  }, []);
 
   return (
     <>
